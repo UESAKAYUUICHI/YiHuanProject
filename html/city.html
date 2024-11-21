@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>异环·都市情报</title>
+    <!-- 谷歌字体链接 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .box {
+        width: 790px;
+        height: 370px;
+        margin: 50px auto;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .wipper {
+        width: 6900px;
+        /*设置为图片的总宽度*/
+        height: 300px;
+        position: absolute;
+        left: 0;
+      }
+
+      .wipper div {
+        width: 800px;
+        height: 500px;
+        float: left;
+        text-align: center;
+        font-size: 30px;
+        line-height: 300px;
+        color: #fff;
+      }
+
+      .wipper div img {
+        width: 105%;
+      }
+
+      .lis {
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+      }
+
+      .lis span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ccc;
+        display: none;
+      }
+
+      .lis span.current {
+        background-color: greenyellow;
+        display: none;
+      }
+    </style>
+    <link rel="stylesheet" href="../css/city.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav-wrapper">
+        <section class="left">
+          <img src="../png/NTE_logo.png" alt="NTE_logo" />
+        </section>
+        <section class="middle">
+          <ul>
+            <li><a href="./index.html">首页</a></li>
+            <li><a href="./charater1.html">角色介绍</a></li>
+            <li><a href="javascript:;" class="active">都市映像</a></li>
+            <li><a href="#">情报速递</a></li>
+            <li><a href="#">加入我们</a></li>
+          </ul>
+        </section>
+        <section class="right">
+          <div class="air"></div>
+          <div class="img"></div>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-wrapper">
+        <!-- 视角区域 -->
+        <div class="box">
+          <!-- 整体图片区域 -->
+          <div class="wipper">
+            <div><img src="../png/NTE_features1.jpg" alt="" /></div>
+            <div><img src="../png/NTE_features2.jpg" alt="" /></div>
+            <div><img src="../png/NTE_features3.jpg" alt="" /></div>
+            <div><img src="../png/NTE_features4.jpg" alt="" /></div>
+            <div><img src="../png/NTE_features5.jpg" alt="" /></div>
+            <div><img src="../png/NTE_features6.jpg" alt="" /></div>
+            <!-- 复制第一张图片，后面使第一张和最后一张无缝切换 -->
+            <div><img src="../png/NTE_features1.jpg" alt="" /></div>
+          </div>
+          <!-- 底部小圆点 -->
+          <div class="lis">
+            <span class="current"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <!-- 向左切换按钮 -->
+        <div class="pre"></div>
+        <!-- 向右切换按钮 -->
+        <div class="next"></div>
+
+        <aside class="aside">
+          <img src="../png/aside_yy.png" alt="" />
+        </aside>
+        <aside class="aside2"></aside>
+      </section>
+
+      <section class="RJO-wrapper"></section>
+    </main>
+    <script src="../javascript/lunbotu.js"></script>
+  </body>
+</html>

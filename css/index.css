@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ZCOOL QingKe HuangYou", "Courier New", Courier, monospace;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+body {
+  overflow: hidden;
+}
+body header {
+  box-shadow: 2px 2px 2px 1px #1d1d1d 50%;
+}
+body header nav.nav-wrapper {
+  width: 100%;
+  display: flex;
+  background-size: cover;
+  background: #1d1d1d url(https://yh.wanmei.com/images/cover240718/header.png) no-repeat right top;
+  height: 8.3vh;
+}
+body header nav.nav-wrapper section.left {
+  display: flex;
+  justify-content: space-around;
+  flex: 2 1 100px;
+  width: 20%;
+}
+body header nav.nav-wrapper section.left img {
+  padding: 1rem;
+  width: 40%;
+  height: 110%;
+}
+body header nav.nav-wrapper section.middle {
+  display: flex;
+  flex: 7 1 700px;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+body header nav.nav-wrapper section.middle ul {
+  width: 75%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+body header nav.nav-wrapper section.middle ul li a {
+  text-decoration: none;
+  color: #a7a7a7;
+  font-size: 1.1rem;
+}
+body header nav.nav-wrapper section.middle ul li a.active {
+  color: aqua;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+body header nav.nav-wrapper section.right {
+  display: flex;
+  flex: 1 1 100px;
+  width: 20%;
+  justify-content: space-around;
+  align-items: center;
+}
+body header nav.nav-wrapper section.right div.air {
+  width: 5rem;
+  height: 5rem;
+}
+body header nav.nav-wrapper section.right div.img {
+  margin-left: -2rem;
+  width: 4.31rem;
+  height: 4.31rem;
+  background-size: cover;
+  background-image: url(../png/bgMusicSwitch.png);
+  background-position: 0 0;
+}
+body main {
+  position: relative;
+}
+body main div.mainPartWrapper {
+  width: 100%;
+  height: 80vh;
+}
+body main div.mainPartWrapper section.mainVideo {
+  width: 100%;
+  height: 100%;
+}
+body main div.mainPartWrapper section.mainVideo video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+body main div.mainPartWrapper section.left div.NET {
+  top: 690px;
+  left: 42px;
+  position: absolute;
+  width: 13%;
+}
+body main div.mainPartWrapper section.left div.NET img {
+  width: 70%;
+}
+body main div.mainPartWrapper section.middle {
+  position: absolute;
+  width: 40vw;
+  height: 20vh;
+  top: 425px;
+  left: 500px;
+}
+body main div.mainPartWrapper section.middle div.info1 {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  width: 70%;
+  height: 3.2vh;
+  background-image: url(../png/eggshell_en.png);
+  background-size: contain;
+}
+body main div.mainPartWrapper section.middle div.img1 {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  width: 40%;
+  height: 6vh;
+  background-image: url(../png/eggshell_yy.png);
+  background-size: cover;
+}
+body main div.mainPartWrapper section.middle div.img2 {
+  position: absolute;
+  top: 75px;
+  left: 350px;
+  width: 40%;
+  height: 9vh;
+  background-image: url(../png/indexYyBtn2.png);
+  background-size: cover;
+}
+body main div.mainPartWrapper section.video {
+  width: 10vw;
+  height: 10vh;
+}
+body main div.mainPartWrapper section.video div {
+  width: 100%;
+  height: 100%;
+}
+body main div.mainPartWrapper section.video div div.img {
+  position: absolute;
+  top: 350px;
+  left: 1070px;
+  width: 7%;
+  height: 8.3vh;
+  background-position: 0 -80px;
+  background-image: url(../png/pvBtn.png);
+  background-size: cover;
+}
+body main div.mainPartWrapper section.taptap div.img {
+  position: absolute;
+  top: 200px;
+  left: 1535px;
+  width: 18vh;
+  height: 32vh;
+  background-image: url(../png/tapAside.png);
+}
+body main div.mainPartWrapper section.character div.img {
+  top: 690px;
+  left: 1450px;
+  position: absolute;
+  width: 20%;
+}
+body main div.mainPartWrapper section.character div.img img {
+  width: 70%;
+}
+body footer {
+  width: 100%;
+  height: 11.7vh;
+}
+body footer section.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #1d1d1d;
+}
+body footer section.wrapper div.left {
+  flex: 2 1 200px;
+}
+body footer section.wrapper div.left ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 10px;
+}
+body footer section.wrapper div.left ul li.item1 {
+  margin-top: 25px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../png/otherPlatform.png);
+  background-size: 450px 110px;
+}
+body footer section.wrapper div.left ul li.item2 {
+  margin-top: 25px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../png/otherPlatform.png);
+  background-size: 450px 110px;
+}
+body footer section.wrapper div.left ul li.item3 {
+  margin-top: 25px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../png/otherPlatform.png);
+  background-size: 450px 110px;
+}
+body footer section.wrapper div.left ul li.item4 {
+  margin-top: 25px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../png/otherPlatform.png);
+  background-size: 450px 110px;
+}
+body footer section.wrapper div.left ul li.item5 {
+  margin-top: 25px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../png/otherPlatform.png);
+  background-size: 450px 110px;
+}
+body footer section.wrapper div.left ul li.item6 {
+  margin-top: 25px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../png/otherPlatform.png);
+  background-size: 450px 110px;
+}
+body footer section.wrapper div.left ul li.item7 {
+  margin-top: 25px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../png/otherPlatform.png);
+  background-size: 450px 110px;
+}
+body footer section.wrapper div.middle {
+  flex: 4 1 400px;
+  background-image: url(../png/indexFoot.png);
+  background-size: contain;
+  scale: 1.3;
+}
+body footer section.wrapper div.right {
+  display: flex;
+  flex: 2 1 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+body footer section.wrapper div.right div.air {
+  width: 10%;
+}
+body footer section.wrapper div.right div.img {
+  width: 54%;
+  height: 44%;
+  background-image: url(../png/neverness.png);
+  background-size: contain;
+}/*# sourceMappingURL=index.css.map */

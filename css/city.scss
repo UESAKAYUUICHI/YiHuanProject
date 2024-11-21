@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ZCOOL QingKe HuangYou", "Courier New", Courier, monospace;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+body {
+  overflow: hidden;
+
+  header {
+    position: relative;
+    z-index: 4;
+    box-shadow: 2px 2px 2px 1px #1d1d1d 50%;
+
+    nav.nav-wrapper {
+      width: 100%;
+      //border: 5px solid rgb(12, 9, 120);
+      display: flex;
+      background-size: cover;
+      background: #1d1d1d url(https://yh.wanmei.com/images/cover240718/header.png) no-repeat right top;
+      height: 8.3vh;
+
+      section.left {
+        display: flex;
+        justify-content: space-around;
+        flex: 2 1 100px;
+        width: 20%;
+
+        //border: 5px solid red;
+        img {
+          padding: 1rem;
+          width: 40%;
+          height: 110%;
+        }
+      }
+
+      section.middle {
+        display: flex;
+        flex: 7 1 700px;
+        width: 70%;
+        // border: 5px solid green;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+          // border: 5px solid green;
+          width: 75%;
+          display: flex;
+          list-style-type: none;
+          justify-content: space-around;
+
+          li {
+            a {
+              text-decoration: none;
+              color: #a7a7a7;
+              font-size: 1.1rem;
+            }
+
+            a.active {
+              color: aqua;
+              font-size: 1.1rem;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      section.right {
+        display: flex;
+        flex: 1 1 100px;
+        width: 20%;
+        justify-content: space-around;
+        align-items: center;
+
+        div.air {
+          width: 5rem;
+          height: 5rem;
+        }
+
+        div.img {
+          margin-left: -2rem;
+          // border: 5px solid green;
+          width: 4.31rem;
+          height: 4.31rem;
+          background-size: cover;
+          background-image: url(../png/bgMusicSwitch.png);
+          background-position: 0 0;
+        }
+      }
+    }
+  }
+
+  main {
+    section.main-wrapper {
+      background-image: url(../png/page_city.jpg);
+
+
+      section.RJO-wrapper {
+        border: 5px solid red;
+        position: absolute;
+        z-index: 3;
+        width: 1400px;
+        height: 900px;
+        background-image: url(../png/tape.png);
+        background-size: contain;
+      }
+
+      div.box {
+        z-index: 7;
+        position: absolute;
+        top: 250px;
+        left: 700px;
+        border: 9px solid #585858;
+      }
+
+      div.pre {
+        position: absolute;
+        width: 92px;
+        height: 330px;
+        background-image: url(../png/citySlidePrev.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        top: 320px;
+        left: 600px;
+      }
+
+      div.next {
+        position: absolute;
+        width: 92px;
+        height: 330px;
+        background-image: url(../png/citySlideNext.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        top: 320px;
+        left: 1500px;
+      }
+
+      position: relative;
+      width: 100%;
+      height: 95vh;
+
+      aside.aside {
+        position: absolute;
+        z-index: 3;
+        display: inline-block;
+        width: 3vw;
+        height: 4vh;
+        top: 0px;
+        left: -280px;
+
+        img {
+          width: 850%;
+        }
+      }
+
+      aside.aside2 {
+        position: absolute;
+        z-index: 4;
+        background-image: url(../png/aside_yyBtn.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 144px;
+        height: 341px;
+        top: 0px;
+        left: -30px;
+
+        &:hover {
+          background-position: -144px 0;
+        }
+      }
+    }
+  }
+}

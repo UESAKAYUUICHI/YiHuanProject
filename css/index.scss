@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ZCOOL QingKe HuangYou", "Courier New", Courier, monospace;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+body {
+  overflow: hidden;
+
+  header {
+    box-shadow: 2px 2px 2px 1px #1d1d1d 50%;
+
+    nav.nav-wrapper {
+      width: 100%;
+      //border: 5px solid rgb(12, 9, 120);
+      display: flex;
+      background-size: cover;
+      background: #1d1d1d url(https://yh.wanmei.com/images/cover240718/header.png) no-repeat right top;
+      height: 8.3vh;
+
+      section.left {
+        display: flex;
+        justify-content: space-around;
+        flex: 2 1 100px;
+        width: 20%;
+
+        //border: 5px solid red;
+        img {
+          padding: 1rem;
+          width: 40%;
+          height: 110%;
+        }
+      }
+
+      section.middle {
+        display: flex;
+        flex: 7 1 700px;
+        width: 70%;
+        // border: 5px solid green;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+          // border: 5px solid green;
+          width: 75%;
+          display: flex;
+          list-style-type: none;
+          justify-content: space-around;
+
+          li {
+            a {
+              text-decoration: none;
+              color: #a7a7a7;
+              font-size: 1.1rem;
+            }
+
+            a.active {
+              color: aqua;
+              font-size: 1.1rem;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      section.right {
+        display: flex;
+        flex: 1 1 100px;
+        width: 20%;
+        justify-content: space-around;
+        align-items: center;
+
+        div.air {
+          width: 5rem;
+          height: 5rem;
+        }
+
+        div.img {
+          margin-left: -2rem;
+          // border: 5px solid green;
+          width: 4.31rem;
+          height: 4.31rem;
+          background-size: cover;
+          background-image: url(../png/bgMusicSwitch.png);
+          background-position: 0 0;
+        }
+      }
+    }
+  }
+
+  main {
+    position: relative;
+
+    div.mainPartWrapper {
+      width: 100%;
+      height: 80vh;
+
+      // border: 4px solid red;
+      section.mainVideo {
+        width: 100%;
+        height: 100%;
+
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+        }
+      }
+
+      section.left {
+        div.NET {
+          top: 690px;
+          left: 42px;
+          position: absolute;
+          width: 13%;
+
+          // border: 4px solid red;
+          img {
+            width: 70%;
+          }
+        }
+      }
+
+      section.middle {
+        position: absolute;
+        //border: 4px solid red;
+        width: 40vw;
+        height: 20vh;
+        top: 425px;
+        left: 500px;
+
+        div.info1 {
+          //border: 4px solid red;
+          position: absolute;
+          top: 50px;
+          left: 100px;
+          width: 70%;
+          height: 3.2vh;
+          background-image: url(../png/eggshell_en.png);
+          background-size: contain;
+        }
+
+        div.img1 {
+          position: absolute;
+          top: 100px;
+          left: 80px;
+          width: 40%;
+          height: 6vh;
+          background-image: url(../png/eggshell_yy.png);
+          background-size: cover;
+        }
+
+        div.img2 {
+          position: absolute;
+          top: 75px;
+          left: 350px;
+          width: 40%;
+          height: 9vh;
+          background-image: url(../png/indexYyBtn2.png);
+          background-size: cover;
+        }
+      }
+
+      section.video {
+        width: 10vw;
+        height: 10vh;
+
+        div {
+          width: 100%;
+          height: 100%;
+
+          div.img {
+            position: absolute;
+            top: 350px;
+            left: 1070px;
+            width: 7%;
+            height: 8.3vh;
+            background-position: 0 -80px;
+            background-image: url(../png/pvBtn.png);
+            background-size: cover;
+          }
+        }
+      }
+
+      section.taptap {
+        div.img {
+          position: absolute;
+          top: 200px;
+          left: 1535px;
+          width: 18vh;
+          height: 32vh;
+          background-image: url(../png/tapAside.png);
+        }
+      }
+
+      section.character {
+        div.img {
+          top: 690px;
+          left: 1450px;
+          position: absolute;
+          width: 20%;
+
+          // border: 4px solid red;
+          img {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    height: 11.7vh;
+
+    section.wrapper {
+      // border: 5px solid green;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: #1d1d1d;
+
+      div.left {
+        flex: 2 1 200px;
+
+        // border: 5px solid green;
+        ul {
+          display: flex;
+          list-style-type: none;
+          justify-content: space-between;
+          padding: 10px;
+
+          li.item1 {
+            margin-top: 25px;
+            width: 55px;
+            height: 55px;
+            // border: 2px solid red;
+            background-image: url(../png/otherPlatform.png);
+            background-size: 450px 110px;
+          }
+
+          li.item2 {
+            margin-top: 25px;
+            width: 55px;
+            height: 55px;
+            // border: 2px solid red;
+            background-image: url(../png/otherPlatform.png);
+            background-size: 450px 110px;
+          }
+
+          li.item3 {
+            margin-top: 25px;
+            width: 55px;
+            height: 55px;
+            // border: 2px solid red;
+            background-image: url(../png/otherPlatform.png);
+            background-size: 450px 110px;
+          }
+
+          li.item4 {
+            margin-top: 25px;
+            width: 55px;
+            height: 55px;
+            // border: 2px solid red;
+            background-image: url(../png/otherPlatform.png);
+            background-size: 450px 110px;
+          }
+
+          li.item5 {
+            margin-top: 25px;
+            width: 55px;
+            height: 55px;
+            // border: 2px solid red;
+            background-image: url(../png/otherPlatform.png);
+            background-size: 450px 110px;
+          }
+
+          li.item6 {
+            margin-top: 25px;
+            width: 55px;
+            height: 55px;
+            // border: 2px solid red;
+            background-image: url(../png/otherPlatform.png);
+            background-size: 450px 110px;
+          }
+
+          li.item7 {
+            margin-top: 25px;
+            width: 55px;
+            height: 55px;
+            // border: 2px solid red;
+            background-image: url(../png/otherPlatform.png);
+            background-size: 450px 110px;
+          }
+        }
+      }
+
+      div.middle {
+        // border: 5px solid red;
+        flex: 4 1 400px;
+        background-image: url(../png/indexFoot.png);
+        background-size: contain;
+        scale: 1.3;
+      }
+
+      div.right {
+        display: flex;
+        // border: 5px solid blue;
+        flex: 2 1 200px;
+        justify-content: space-around;
+        align-items: center;
+
+        div.air {
+          width: 10%;
+        }
+
+        div.img {
+          // border: 5px solid green;
+          width: 54%;
+          height: 44%;
+          background-image: url(../png/neverness.png);
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
